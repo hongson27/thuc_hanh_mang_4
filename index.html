@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let newArray = [];
+    for (let i = 0; i < Math.floor(Math.random() * 15) + 5; i++) {
+        newArray.push(Math.floor(Math.random() * 20));
+    }
+    document.write(newArray);
+    let max = newArray[0];
+    let index;
+    for (let i= 1; i < newArray.length; i++) {
+        if (newArray[i] > max) {
+            max = newArray[i];
+            index = i;
+        }
+    }
+    document.write("<br>" + 'max= ' + max + ' va o vi tri ' + index);
+</script>
+</body>
+</html>
